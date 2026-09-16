@@ -1,5 +1,9 @@
 # Disaster Response Platform
 
+> ⚠️ **Status: Work in progress.** This project is still under active
+> development — expect incomplete features, rough edges, and breaking
+> changes.
+
 An agentic disaster-response system: citizens submit emergency reports, an
 AI agent triages urgency, retrieves relevant Standard Operating Procedures
 via MongoDB Atlas Vector Search, gathers real-time context (weather, similar

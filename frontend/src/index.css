@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-surface-page text-text-primary font-sans;
+}
+
+/* The floating rounded shell that contains the whole app UI, matching the
+   reference's outer dark card sitting on an even-darker page background. */
+.app-shell {
+  @apply bg-surface-shell rounded-shell shadow-[0px_30px_60px_rgba(0,0,0,0.2)];
+}
+
+.card {
+  @apply bg-surface-card rounded-card p-4;
+}
+
+.tile {
+  @apply bg-surface-tile rounded-tile p-3;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply btn bg-accent-mint text-surface-shell hover:brightness-95;
+}
+
+.btn-secondary {
+  @apply btn bg-surface-tile text-text-secondary hover:text-text-primary;
+}
+
+.btn-danger {
+  @apply btn bg-status-critical/15 text-status-critical border border-status-critical/40 hover:bg-status-critical/25;
+}
+
+.btn-success {
+  @apply btn bg-accent-mint/15 text-accent-mint border border-accent-mint/40 hover:bg-accent-mint/25;
+}
+
+.input {
+  @apply block w-full rounded-md border border-surface-border bg-surface-tile px-3 py-2 text-sm text-text-primary placeholder:text-text-faint focus:border-accent-mint focus:outline-none focus:ring-1 focus:ring-accent-mint;
+}
+
+.label {
+  @apply block text-sm font-medium text-text-secondary mb-1;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+.nav-link {
+  @apply flex items-center gap-2.5 rounded-md px-3 py-2 text-xs font-medium text-text-muted transition-colors hover:text-text-primary;
+}
+
+.nav-link-active {
+  @apply bg-accent-mint text-surface-shell hover:text-surface-shell;
+}
+
